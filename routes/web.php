@@ -15,7 +15,28 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('test',function(){
+Route::get('admin',function(){
     return view('admin.layout.index');
+    
+});
+Route::get('about',function(){
+    return view('about');
+    
+});
+
+Route::get('contact',function(){
+    return view('contact');
+    
+});
+Route::get('events',function(){
+    return view('events');
+    
+});
+Route::get('reservation',function(){
+    return view('reservation');
+    
+});
+Route::get('roms',function(){
+    return view('roms');
     
 });
