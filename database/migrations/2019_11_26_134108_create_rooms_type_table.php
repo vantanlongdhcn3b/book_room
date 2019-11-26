@@ -9,7 +9,7 @@ class CreateRoomsTypeTable extends Migration
     /**
      * Run the migrations.
      * 
-     * bảng Rooms_type
+     * Bảng Rooms_type
      * 
      *  Tên	    Kiểu dữ liệu	Diễn giải	    Loại Khóa
      *  ID	    Int(10)		                    Khóa chính
