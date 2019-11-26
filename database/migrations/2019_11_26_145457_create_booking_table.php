@@ -21,13 +21,11 @@ class CreateBookingTable extends Migration
         Schema::create('booking', function (Blueprint $table) {
             $table->bigIncrements('idbooking');
             $table->float('total', 8, 2);
-            $table->bigInteger('idroom');
             $table->string('namecustomer',255);
             $table->string('emailcustomer',255);
             $table->integer('phone');
             $table->string('address',255);
             $table->timestamps();
-            $table->foreign('idroom')->references('idroom')->on('rooms');
         });
     }
 
