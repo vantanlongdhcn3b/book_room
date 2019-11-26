@@ -36,7 +36,7 @@ Route::get('reservation',function(){
     return view('reservation');
     
 });
-Route::get('roms',function(){
-    return view('roms');
+Route::get('rooms',function(){
+    return view('rooms');
     
 });
