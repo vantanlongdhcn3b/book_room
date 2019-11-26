@@ -8,14 +8,30 @@ class CreateRoomsTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     * bảng Rooms
+     *     Tên	        Kiểu dữ liệu	Diễn giải	    Loại Khóa
+     *      ID	        Int(10)		                    Khóa chính
+     *      Name	    Varchar(191)	Tên phòng	
+     *      Price	    Double(8,2)	    Giá phòng	
+     *      Guest	    Int(11)	        Số lượng người	
+     *      Bed	        Int(11)	        Số lượng giường	
+     *      idHotel 	Int(10)		                    Khóa ngoại
+     *      idRoomtype	Int(10)		                    Khóa ngoại
      * @return void
      */
     public function up()
     {
         Schema::create('rooms', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('idroom');
+            $table->string('name',191);
+            $table->float('price', 8, 2);
+            $table->integer('guest');
+            $table->integer('bed');
+            $table->bigInteger('idhotel');
+            $table->bigInteger('idroomtype');
             $table->timestamps();
+            $table->foreign('idhotel')->references('idhotel')->on('hotels');
+            $table->foreign('idroomtype')->references('idroomtype')->on('rooms_type');
         });
     }
 
