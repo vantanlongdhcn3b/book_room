@@ -19,12 +19,12 @@ class CreateHotelFacilityTable extends Migration
     public function up()
     {
         Schema::create('hotel_facility', function (Blueprint $table) {
-            $table->bigIncrements('idhotelfacility');
-            $table->bigInteger('idhotel');
-            $table->bigInteger('idfacility');
+            $table->bigIncrements('id');
+            $table->unsignedBigInteger('idhotel');
+            $table->unsignedBigInteger('idfacility');
             $table->timestamps();
-            $table->foreign('idhotel')->references('idhotel')->on('hotels');
-            $table->foreign('idfacility')->references('idfacility')->on('facility');
+            $table->foreign('idhotel')->references('id')->on('hotels');
+            $table->foreign('idfacility')->references('id')->on('facility');
         });
     }
 

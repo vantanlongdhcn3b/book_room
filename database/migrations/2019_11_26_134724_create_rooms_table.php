@@ -22,16 +22,21 @@ class CreateRoomsTable extends Migration
     public function up()
     {
         Schema::create('rooms', function (Blueprint $table) {
-            $table->bigIncrements('idroom');
+            $table->bigIncrements('id');
             $table->string('name',191);
             $table->float('price', 8, 2);
             $table->integer('guest');
             $table->integer('bed');
-            $table->bigInteger('idhotel');
-            $table->bigInteger('idroomtype');
+            $table->unsignedBigInteger('idhotel');
+            $table->unsignedBigInteger('idroomtype');
             $table->timestamps();
-            $table->foreign('idhotel')->references('idhotel')->on('hotels');
-            $table->foreign('idroomtype')->references('idroomtype')->on('rooms_type');
+
+            $table->foreign('idhotel')
+                ->references('id')
+                ->on('hotels');
+            $table->foreign('idroomtype')
+                ->references('id')
+                ->on('rooms_type');
         });
     }
 

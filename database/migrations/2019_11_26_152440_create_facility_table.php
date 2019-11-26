@@ -18,7 +18,7 @@ class CreateFacilityTable extends Migration
     public function up()
     {
         Schema::create('facility', function (Blueprint $table) {
-            $table->bigIncrements('idfacility');
+            $table->bigIncrements('id');
             $table->string('name',255);
             $table->timestamps();
         });

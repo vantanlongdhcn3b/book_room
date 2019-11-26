@@ -19,11 +19,11 @@ class CreateRoomsImgTable extends Migration
     public function up()
     {
         Schema::create('rooms_img', function (Blueprint $table) {
-            $table->bigIncrements('idroomsimg');
+            $table->bigIncrements('id');
             $table->string('path',255);
-            $table->bigInteger('idroom');
+            $table->unsignedBigInteger('idroom');
             $table->timestamps();
-            $table->foreign('idroom')->references('idroom')->on('rooms');
+            $table->foreign('idroom')->references('id')->on('rooms');
         });
     }
 

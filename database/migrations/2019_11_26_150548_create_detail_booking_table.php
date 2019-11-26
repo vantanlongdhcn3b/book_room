@@ -23,17 +23,17 @@ class CreateDetailBookingTable extends Migration
     public function up()
     {
         Schema::create('detail_booking', function (Blueprint $table) {
-            $table->bigIncrements('iddetailbooking');
-            $table->bigInteger('idroomtype');
+            $table->bigIncrements('id');
+            $table->unsignedBigInteger('idroomtype');
             $table->integer('noofroom');
             $table->date('checkin');
             $table->date('checkout');
             $table->integer('guest');
-            $table->bigInteger('idbooking');
+            $table->unsignedBigInteger('idbooking');
             $table->timestamps();
 
-            $table->foreign('idroomtype')->references('idroomtype')->on('rooms_type');
-            $table->foreign('idbooking')->references('idbooking')->on('booking');
+            $table->foreign('idroomtype')->references('id')->on('rooms_type');
+            $table->foreign('idbooking')->references('id')->on('booking');
         });
     }
 
