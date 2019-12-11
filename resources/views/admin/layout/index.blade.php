@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title>SoSo Hotel| </title>
+    <title>SoSo Hotel </title>
 
     <!-- Bootstrap -->
     <link href="admin_asset/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -81,7 +81,7 @@
                                     aria-labelledby="navbarDropdown1">
                                     <li class="nav-item">
                                         <a class="dropdown-item">
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <!-- <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
                                                 <span class="time">3 mins ago</span>
@@ -89,12 +89,12 @@
                                             <span class="message">
                                                 Film festivals used to be do-or-die moments for movie makers. They were
                                                 where...
-                                            </span>
+                                            </span> -->
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item">
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <!-- <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
                                                 <span class="time">3 mins ago</span>
@@ -102,12 +102,12 @@
                                             <span class="message">
                                                 Film festivals used to be do-or-die moments for movie makers. They were
                                                 where...
-                                            </span>
+                                            </span> -->
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item">
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <!-- <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
                                                 <span class="time">3 mins ago</span>
@@ -115,12 +115,12 @@
                                             <span class="message">
                                                 Film festivals used to be do-or-die moments for movie makers. They were
                                                 where...
-                                            </span>
+                                            </span> -->
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item">
-                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <!-- <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                                             <span>
                                                 <span>John Smith</span>
                                                 <span class="time">3 mins ago</span>
@@ -128,7 +128,7 @@
                                             <span class="message">
                                                 Film festivals used to be do-or-die moments for movie makers. They were
                                                 where...
-                                            </span>
+                                            </span> -->
                                         </a>
                                     </li>
                                     <li class="nav-item">
@@ -153,7 +153,7 @@
         <!-- footer content -->
         <footer>
           <div class="pull-right">
-           By FourTeam <a href="/">3b</a>
+           By Hiền-Long <a href="/">3b</a>
           </div>
           <div class="clearfix"></div>
         </footer>
