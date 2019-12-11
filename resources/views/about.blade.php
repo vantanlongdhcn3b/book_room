@@ -97,7 +97,7 @@
           </div>
           <div class="col-md-12 col-lg-4 order-lg-1" data-aos="fade-up">
             <h2 class="heading">Welcome!</h2>
-            <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <p class="mb-4">You can choose the room and price. We always update it correctly. Very pleased to serve you another, we provide a full range of services to support you the best.</p>
             <p><a href="#" class="btn btn-primary text-white py-2 mr-3">Learn More</a> <span class="mr-3 font-family-serif"><em>or</em></span> <a href="https://vimeo.com/channels/staffpicks/93951774"  data-fancybox class="text-uppercase letter-spacing-1">See video</a></p>
           </div>
           
@@ -197,7 +197,7 @@
         <div class="row justify-content-center text-center mb-5">
           <div class="col-md-7">
             <h2 class="heading" data-aos="fade-up">Photos</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <p data-aos="fade-up" data-aos-delay="100"> We always update it correctly. Very pleased to serve you another, we provide a full range of services to support you the best.</p>
           </div>
         </div>
         <div class="row">
@@ -246,21 +246,21 @@
           <div class="col-md-8">
             <div class="timeline-item" date-is='2019' data-aos="fade">
               <h3>More Branches Worldwide</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+              <p>With the development of the hotel chain along with the accompanying services, we always strive to improve and upgrade the hotel system and have a great experience.</p>
+              <p></p>
             </div>
             
             <div class="timeline-item" date-is='2011' data-aos="fade">
               <h3>Company Full Blast</h3>
               <p>
-                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+              Hotel establishment
               </p>
             </div>
             
             <div class="timeline-item" date-is='2008' data-aos="fade">
               <h3>The Birth of the Company</h3>
               <p>
-                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+              Birthday hotel
               </p>
             </div>
           </div>
@@ -306,9 +306,9 @@
           </div>
           <div class="col-md-3 mb-5 pr-md-5 contact-info">
             <!-- <li>198 West 21th Street, <br> Suite 721 New York NY 10016</li> -->
-            <p><span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span>Address:</span> <span> 198 West 21th Street, <br> Suite 721 New York NY 10016</span></p>
-            <p><span class="d-block"><span class="ion-ios-telephone h5 mr-3 text-primary"></span>Phone:</span> <span> (+1) 435 3533</span></p>
-            <p><span class="d-block"><span class="ion-ios-email h5 mr-3 text-primary"></span>Email:</span> <span> info@domain.com</span></p>
+            <p><span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span>Address:</span> <span> Nha Trang  <br> Vietnam</span></p>
+            <p><span class="d-block"><span class="ion-ios-telephone h5 mr-3 text-primary"></span>Phone:</span> <span> (+84) 0968141510</span></p>
+            <p><span class="d-block"><span class="ion-ios-email h5 mr-3 text-primary"></span>Email:</span> <span> hiendhcn3b@gmail.com</span></p>
           </div>
           <div class="col-md-3 mb-5">
             <p>Sign up for our newsletter</p>
@@ -323,7 +323,7 @@
         <div class="row pt-5">
           <p class="col-md-6 text-left">
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights  <i class="icon-heart-o" aria-hidden="true"></i> by <a href="/" target="_blank" >Thu Hiền -Tấn Long</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
             

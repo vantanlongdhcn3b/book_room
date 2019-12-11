@@ -167,9 +167,9 @@
           <div class="col-md-5" data-aos="fade-up" data-aos-delay="200">
             <div class="row">
               <div class="col-md-10 ml-auto contact-info">
-                <p><span class="d-block">Address:</span> <span class="text-black"> 98 West 21th Street, Suite 721 New York NY 10016</span></p>
-                <p><span class="d-block">Phone:</span> <span class="text-black"> (+1) 435 3533</span></p>
-                <p><span class="d-block">Email:</span> <span class="text-black"> info@yourdomain.com</span></p>
+                <p><span class="d-block">Address:</span> <span class="text-black"> Nha Trang Vietnam</span></p>
+                <p><span class="d-block">Phone:</span> <span class="text-black"> 0968141510</span></p>
+                <p><span class="d-block">Email:</span> <span class="text-black"> hiendhcn3b@gmail.com</span></p>
               </div>
             </div>
           </div>
@@ -193,7 +193,7 @@
               </div>
               <blockquote>
 
-                <p>&ldquo;A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
+                <p>&ldquo;Great hotel, clean room system.&rdquo;</p>
               </blockquote>
               <p><em>&mdash; Jean Smith</em></p>
             </div> 
@@ -203,7 +203,7 @@
                 <img src="images/person_2.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
               </div>
               <blockquote>
-                <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.&rdquo;</p>
+                <p>&ldquo;Great hotel, the service was too good.&rdquo;</p>
               </blockquote>
               <p><em>&mdash; John Doe</em></p>
             </div>
@@ -214,7 +214,9 @@
               </div>
               <blockquote>
 
-                <p>&ldquo;When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.&rdquo;</p>
+                <p>&ldquo;
+
+Friendly and enthusiastic worker&rdquo;</p>
               </blockquote>
               <p><em>&mdash; John Doe</em></p>
             </div>
@@ -226,7 +228,9 @@
               </div>
               <blockquote>
 
-                <p>&ldquo;A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
+                <p>&ldquo;
+
+Friendly and enthusiastic worker&rdquo;</p>
               </blockquote>
               <p><em>&mdash; Jean Smith</em></p>
             </div> 
@@ -236,7 +240,7 @@
                 <img src="images/person_2.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
               </div>
               <blockquote>
-                <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.&rdquo;</p>
+                <p>&ldquo;Great hotel, clean room system.&rdquo;</p>
               </blockquote>
               <p><em>&mdash; John Doe</em></p>
             </div>
@@ -247,7 +251,7 @@
               </div>
               <blockquote>
 
-                <p>&ldquo;When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.&rdquo;</p>
+                <p>&ldquo;Clean room system&rdquo;</p>
               </blockquote>
               <p><em>&mdash; John Doe</em></p>
             </div>
