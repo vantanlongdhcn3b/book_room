@@ -22,14 +22,14 @@
 ## Mục đích của bài toán:
 - Website xây dựng một hệ thống cho phép khách hàng có thể tra cứu cài đặt các phòng khách sạn dựa trên các ngày nghỉ, ngày bình thường, ngày lễ, tết được người quản trị cập nhật.
 - Người quản trị sẽ đăng tải các bài viết và ảnh về phòng khách sạn và phân loại chúng theo:
-1. Dịp lễ : ngày lễ trong năm, lễ tết.
-2. Theo danh mục combo : Ngày cuối tuần, dịp hè, lễ tết.
+    1. Dịp lễ : ngày lễ trong năm, lễ tết.
+    2. Theo danh mục combo : Ngày cuối tuần, dịp hè, lễ tết.
 - Ngoài ra website cung cấp cho người quản trị có thể thêm các danh mục cần thiết.
 - Website sẽ thực hiện trên ngôn ngữ PHP, MySQL
 ## Các bước cài đặt:
 Bước1: Cài đặt Xampp theo hướng dẫn ở link "https://hocwebchuan.com/tutorial/php/install_xampp.php"
 
-Bước2: clone về máy theo cách sau trong thư mục C/xampp/htdocs: Tải git về máy, chuột phải vào thư mục cần lưu trữ, chọn git pash here, gõ lệnh "git clone https://github.com/nguyenngochientt/WebDuLich-BaiTapLon-PTMNM-.git".
+Bước2: Clone về máy theo cách sau trong thư mục C/xampp/htdocs: Tải git về máy, chuột phải vào thư mục cần lưu trữ, chọn git pash here, gõ lệnh "git clone https://github.com/nguyenngochientt/WebDuLich-BaiTapLon-PTMNM-.git".
 
 Bước3: Vào trình duyệt gõ đường dẫn vào localhost đến thư mục đã cài đặt.
 ## Nội dung bài toán:
