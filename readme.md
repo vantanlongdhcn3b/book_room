@@ -28,7 +28,9 @@
 - Website sẽ thực hiện trên ngôn ngữ PHP, MySQL
 ## Các bước cài đặt:
 Bước1: Cài đặt Xampp theo hướng dẫn ở link "https://hocwebchuan.com/tutorial/php/install_xampp.php"
+
 Bước2: clone về máy theo cách sau trong thư mục C/xampp/htdocs: Tải git về máy, chuột phải vào thư mục cần lưu trữ, chọn git pash here, gõ lệnh "git clone https://github.com/nguyenngochientt/WebDuLich-BaiTapLon-PTMNM-.git".
+
 Bước3: Vào trình duyệt gõ đường dẫn vào localhost đến thư mục đã cài đặt.
 ## Nội dung bài toán:
 - Hiện tại website đã hoàn thành 50% giao diện .
