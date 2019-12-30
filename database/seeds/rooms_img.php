@@ -20,6 +20,7 @@ class rooms_img extends Seeder
             [
                 'path'=>'images/img_2.jpg',
                 'idroomtype' => 2,
+                
             ],
             [
                 'path'=>'images/img_3.jpg',
