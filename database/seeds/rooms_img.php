@@ -26,7 +26,6 @@ class rooms_img extends Seeder
                 'path'=>'images/img_3.jpg',
                 
                 'idroomtype' => 3,
-                
             ],
             ]);
     }
