@@ -21,7 +21,7 @@ class CreateAnhKSSTable extends Migration
 
             $table->foreign('KhachSan_ID')
                 ->references('KhachSan_ID')
-                ->on('KhachSans');
+                ->on('KhachSans')->onDelete('cascade');
         });
     }
 

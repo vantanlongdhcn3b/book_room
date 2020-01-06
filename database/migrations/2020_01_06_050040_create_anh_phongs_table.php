@@ -22,7 +22,8 @@ class CreateAnhPhongsTable extends Migration
 
             $table->foreign('Phong_ID')
                 ->references('Phong_ID')
-                ->on('Phongs');
+                ->on('Phongs')
+                ->onDelete('cascade');
         });
     }
 

@@ -29,7 +29,8 @@ class CreateDatPhongsTable extends Migration
             $table->timestamps();
             $table->foreign('LoaiPhong_ID')
                 ->references('LoaiPhong_ID')
-                ->on('LoaiPhongs');
+                ->on('LoaiPhongs')
+                ->onDelete('cascade')->onDelete('cascade');
         });
     }
 

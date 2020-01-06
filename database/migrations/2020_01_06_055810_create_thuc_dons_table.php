@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMonAnsTable extends Migration
+class CreateThucDonsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateMonAnsTable extends Migration
      */
     public function up()
     {
-        Schema::create('MonAns', function (Blueprint $table) {
-            $table->bigIncrements('MonAn_ID');
+        Schema::create('ThucDon', function (Blueprint $table) {
+            $table->bigIncrements('ThucDon_ID');
             $table->string('TenMon',191);
             $table->float('Gia', 8, 2);
             $table->longText('MoTa');
+            $table->string('Loai');
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateMonAnsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mon_ans');
+        Schema::dropIfExists('thuc_dons');
     }
 }

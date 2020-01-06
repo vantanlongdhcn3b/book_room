@@ -25,10 +25,10 @@ class CreatePhongsTable extends Migration
 
             $table->foreign('KhachSan_ID')
                 ->references('KhachSan_ID')
-                ->on('KhachSans');
+                ->on('KhachSans')->onDelete('cascade');
             $table->foreign('LoaiPhong_ID')
                 ->references('LoaiPhong_ID')
-                ->on('LoaiPhongs');
+                ->on('LoaiPhongs')->onDelete('cascade');
         });
     }
 
