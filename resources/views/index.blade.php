@@ -107,43 +107,19 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="images/img_1.jpg" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Single Room</h2>
-                <span class="text-uppercase letter-spacing-1">90$ / per night</span>
-              </div>
-            </a>
-          </div>
-
+          @foreach($phong as $ro)
           <div class="col-md-6 col-lg-4" data-aos="fade-up">
             <a href="#" class="room">
               <figure class="img-wrap">
                 <img src="images/img_2.jpg" alt="Free website template" class="img-fluid mb-3">
               </figure>
               <div class="p-3 text-center room-info">
-                <h2>Family Room</h2>
-                <span class="text-uppercase letter-spacing-1">120$ / per night</span>
+                <h2>{!!$ro->TenPhong!!}</h2>
+                <span class="text-uppercase letter-spacing-1">{!!$ro->Gia!!}$ / per night</span>
               </div>
             </a>
           </div>
-
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="images/img_3.jpg" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Presidential Room</h2>
-                <span class="text-uppercase letter-spacing-1">250$ / per night</span>
-              </div>
-            </a>
-          </div>
-
-
+          @endforeach
         </div>
       </div>
     </section>
@@ -160,27 +136,13 @@
         <div class="row">
           <div class="col-md-12">
             <div class="home-slider major-caousel owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
-              <div class="slider-item">
-                <a href="images/slider-1.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="images/slider-1.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/slider-2.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="images/slider-2.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/slider-3.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="images/slider-3.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/slider-4.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="images/slider-4.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/slider-5.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="images/slider-5.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/slider-6.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="images/slider-6.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/slider-7.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="images/slider-7.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
+              @foreach($anhks as $item)
+            
+            <div class="slider-item">
+              <a href="{!!$item->LinkAnh!!}" data-fancybox="images" data-caption="Caption for this image"><img src="{!!$item->LinkAnh!!}" alt="Image placeholder" class="img-fluid"></a>
+            </div>
+            @endforeach
+              
             </div>
             <!-- END slider -->
           </div>
@@ -216,39 +178,27 @@
             <div class="tab-pane fade show active text-left" id="mains" role="tabpanel" aria-labelledby="mains-tab">
               <div class="row">
                 <div class="col-md-6">
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$20.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Murgh Tikka Masala</a></h3>
-                    <p class="text-white text-opacity-7">Pumpkin soup with pork bones</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$35.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Fish Moilee</a></h3>
-                    <p class="text-white text-opacity-7">Beef stewed pumpkin soup</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$15.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Safed Gosht</a></h3>
-                    <p class="text-white text-opacity-7">dessert with fruit</p>
-                  </div>
+                  <?php $i=1;
+                    $flag=true;
+                  ?>
+                  @foreach($thucdon as $detai)
+                    @if($detai->Loai==='mains')
+                      <div class="food-menu mb-5">
+                        <span class="d-block text-primary h4 mb-3">${!!$detai->Gia!!}</span>
+                        <h3 class="text-white"><a href="#" class="text-white">{!!$detai->TenMon!!}</a></h3>
+                        <p class="text-white text-opacity-7">{!!$detai->MoTa!!}</p>
+                      </div>
+                      <?php $i=$i+1;
+                     ?>
+                    @endif
+                    @if($i=(int)(count($thucdon)/6)&& $flag==true)
+                    </div>
+                    <div class="col-md-6">
+                    @endif          
+                  @endforeach
+                  
                 </div>
-                <div class="col-md-6">
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$10.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">French Toast Combo</a></h3>
-                    <p class="text-white text-opacity-7">Stewed goat meat</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$8.35</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Vegie Omelet</a></h3>
-                    <p class="text-white text-opacity-7">Mushroom rolls</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$22.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Chorizo &amp; Egg Omelet</a></h3>
-                    <p class="text-white text-opacity-7">Stewed chicken herbs</p>
-                  </div>
-                </div>
+                
               </div>
               
 
@@ -256,77 +206,51 @@
 
             <div class="tab-pane fade text-left" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
               <div class="row">
-                <div class="col-md-6">
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$11.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Banana Split</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$72.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Sticky Toffee Pudding</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$26.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Pecan</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$42.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Apple Strudel</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$7.35</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Pancakes</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$22.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Ice Cream Sundae</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
+              <div class="col-md-6">
+                  <?php $i=1;
+                    $flag=true;
+                  ?>
+                  @foreach($thucdon as $detai)
+                    @if($detai->Loai==='desserts')
+                      <div class="food-menu mb-5">
+                        <span class="d-block text-primary h4 mb-3">${!!$detai->Gia!!}</span>
+                        <h3 class="text-white"><a href="#" class="text-white">{!!$detai->TenMon!!}</a></h3>
+                        <p class="text-white text-opacity-7">{!!$detai->MoTa!!}</p>
+                      </div>
+                      <?php $i=$i+1;
+                     ?>
+                    @endif
+                    @if($i=(int)(count($thucdon)/6)&& $flag==true)
+                    </div>
+                    <div class="col-md-6">
+                    @endif          
+                  @endforeach
+                  
                 </div>
               </div>
             </div> <!-- .tab-pane -->
             <div class="tab-pane fade text-left" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
               <div class="row">
-                <div class="col-md-6">
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$32.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Spring Water</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$14.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Coke, Diet Coke, Coke Zero</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$93.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Orange Fanta</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$18.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Lemonade, Lemon Squash</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$38.35</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Sparkling Mineral Water</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
-                  <div class="food-menu mb-5">
-                    <span class="d-block text-primary h4 mb-3">$69.00</span>
-                    <h3 class="text-white"><a href="#" class="text-white">Lemon, Lime &amp; Bitters</a></h3>
-                    <p class="text-white text-opacity-7">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  </div>
+              <div class="col-md-6">
+                  <?php $i=1;
+                    $flag=true;
+                  ?>
+                  @foreach($thucdon as $detai)
+                    @if($detai->Loai==='driks')
+                      <div class="food-menu mb-5">
+                        <span class="d-block text-primary h4 mb-3">${!!$detai->Gia!!}</span>
+                        <h3 class="text-white"><a href="#" class="text-white">{!!$detai->TenMon!!}</a></h3>
+                        <p class="text-white text-opacity-7">{!!$detai->MoTa!!}</p>
+                      </div>
+                      <?php $i=$i+1;
+                     ?>
+                    @endif
+                    @if($i=(int)(count($thucdon)/6)&& $flag==true)
+                    </div>
+                    <div class="col-md-6">
+                    @endif          
+                  @endforeach
+                  
                 </div>
               </div>
             </div> <!-- .tab-pane -->

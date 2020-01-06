@@ -15,10 +15,11 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
 
-            rooms_type::class,
-            hotels::class,
-            facility::class,
-            rooms_img::class,
+            KhachSanTableSeeder::class,
+            AnhKSTableSeeder::class,
+            LoaiPhongTableSeeder::class,
+            PhongTableSeeder::class,
+            MonAnTableSeeder::class,
 
         ]);
        

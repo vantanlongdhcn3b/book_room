@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/','HomeController@index');
 
 Route::get('admin',function(){
     return view('admin.index');
@@ -32,10 +30,8 @@ Route::get('events',function(){
     return view('events');
     
 });
-Route::get('reservation',function(){
-    return view('reservation');
-    
-});
+
+Route::resource('reservation', 'DatPhongController');
 Route::get('rooms',function(){
     return view('rooms');
     
