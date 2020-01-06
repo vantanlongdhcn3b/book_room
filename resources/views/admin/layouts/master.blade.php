@@ -8,9 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="images/favicon.ico" type="image/ico" />
-
     <title>SoSo Hotel </title>
-
     <!-- Bootstrap -->
     <link href="admin_asset/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -40,11 +38,12 @@
 
 <body class="nav-md">
     <div class="container body">
+
         <div class="main_container">
             <div class="col-md-3 left_col">
-               @include('admin.layout.hearder')
+               @include('admin.layouts.hearder')
             </div>
-            @yield('content')
+           
             <!-- top navigation -->
             <div class="top_nav">
                 <div class="nav_menu" style="margin: 0px;">
@@ -149,7 +148,9 @@
             <!-- /top navigation -->
 
            
-
+<div class="container">
+@yield('content')
+</div>
         <!-- footer content -->
         <footer>
           <div class="pull-right">

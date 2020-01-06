@@ -4,23 +4,24 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFacilityTable extends Migration
+class CreateAnhKSSTable extends Migration
 {
     /**
      * Run the migrations.
      *
-     * Tên	Kiểu dữ liệu	Diễn giải	                Loại Khóa
-     * ID	Int(10)		                                Khóa chính
-     * Name	Varchar(255)	Tên tiện nghi khách sạn	
-
      * @return void
      */
     public function up()
     {
-        Schema::create('facility', function (Blueprint $table) {
+        Schema::create('AnhKS', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name',255);
+            $table->string('LinkAnh',255);
+            $table->unsignedBigInteger('KhachSan_ID');
             $table->timestamps();
+
+            $table->foreign('KhachSan_ID')
+                ->references('KhachSan_ID')
+                ->on('KhachSans');
         });
     }
 
@@ -31,6 +32,6 @@ class CreateFacilityTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('facility');
+        Schema::dropIfExists('anh_k_s_s');
     }
 }

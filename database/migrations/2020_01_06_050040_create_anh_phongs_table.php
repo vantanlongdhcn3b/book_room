@@ -4,29 +4,27 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRoomsTypeTable extends Migration
+class CreateAnhPhongsTable extends Migration
 {
     /**
      * Run the migrations.
-     * 
-     * Bảng Rooms_type
-     * 
-     *  Tên	    Kiểu dữ liệu	Diễn giải	    Loại Khóa
-     *  ID	    Int(10)		                    Khóa chính
-     *  Name	Varchar(191)	Tên loại phòng	
      *
      * @return void
      */
     public function up()
     {
-        Schema::create('rooms_type', function (Blueprint $table) {
+        Schema::create('anh_phongs', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name',191);
+            $table->string('LinkAnh',255);
+            $table->unsignedBigInteger('Phong_ID');
+            
             $table->timestamps();
+
+            $table->foreign('Phong_ID')
+                ->references('Phong_ID')
+                ->on('Phongs');
         });
     }
-
-
 
     /**
      * Reverse the migrations.
@@ -35,6 +33,6 @@ class CreateRoomsTypeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rooms_type');
+        Schema::dropIfExists('anh_phongs');
     }
 }
