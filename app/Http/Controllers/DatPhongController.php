@@ -35,9 +35,9 @@ class DatPhongController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {   
        
-       //return DatPhong::create($request->all());
+       return DatPhong::create($request->all());
     }
 
     /**

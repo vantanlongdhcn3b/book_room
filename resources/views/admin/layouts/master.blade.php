@@ -12,37 +12,31 @@
     <title>Travel Book | </title>
 
     <!-- Bootstrap -->
-    <link href="../../layout/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="admin_asset/layout/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../../layout/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="admin_asset/layout/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="../../layout/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="admin_asset/layout/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
-    <link href="../../layout/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link href="admin_asset/layout/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 
     <!-- bootstrap-progressbar -->
-    <link href="../../layout/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <link href="admin_asset/layout/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
     <!-- JQVMap -->
-    <link href="../../layout/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <link href="admin_asset/layout/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
     <!-- bootstrap-daterangepicker -->
-    <link href="../../layout/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="admin_asset/layout/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
  <!-- Datatables -->
- <link href="../../layout/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="../../layout/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
-    <link href="../../layout/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
-    <link href="../../layout/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
-    <link href="../../layout/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
-    <link href="../../layout/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+ <link href="admin_asset/layout/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="admin_asset/layout/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="admin_asset/layout/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="admin_asset/layout/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="admin_asset/layout/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
     <!-- Custom Theme Style -->
-    <link href="../../layout/build/css/custom.min.css" rel="stylesheet">
+    <link href="admin_asset/layout/build/css/custom.min.css" rel="stylesheet">
     <!-- Dropzone.js -->
-    <link href="../../layout/vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
-    <?php 
-        include '..\..\..\model\connectDB.php';
-        use model\connectDB;
-        $connectDB=new connectDB("tctdlich");
-        $connectDB->connect();
-    ?>
+    <link href="admin_asset/layout/vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+    
 </head>
 <body class="nav-md">
     <div class="container body">
@@ -50,7 +44,7 @@
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Bảng điều
+                        <a href="/admin" class="site_title"><i class="fa fa-paw"></i> <span>Bảng điều
                                 khiển</span></a>
                     </div>
 
@@ -59,7 +53,7 @@
                     <!-- menu profile quick info -->
                     <div class="profile clearfix">
                         <div class="profile_pic">
-                            <img src="layout/production/images/user.png " alt="..." class="img-circle profile_img">
+                            <img src="admin_asset/layout/production/images/user.png " alt="..." class="img-circle profile_img">
                         </div>
                         <div class="profile_info">
                             <span>Welcome</span>
@@ -85,16 +79,16 @@
                                     <a><i class="glyphicon glyphicon-certificate" style="margin-right: 12px;"></i> Hướng
                                         dẫn viên <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="../guider/tour_guider.php">Xem tất cả</a></li>
-                                        <li><a href="../guider/add_tour_guider.php">Thêm mới</a></li>
+                                        <li><a href="admin/tour">Xem tất cả</a></li>
+                                        <li><a href="MainLayout/guider/add_tour_guider.php">Thêm mới</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a><i class="glyphicon glyphicon-leaf" style="margin-right: 12px;"></i> Tour <span
                                             class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="tour.php">Xem tất cả</a></li>
-                                        <li><a href="addtour.php">Thêm mới</a></li>
+                                        <li><a href="admin/tour">Xem tất cả</a></li>
+                                        <li><a href="MainLayout/tour/addtour.php">Thêm mới</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -229,3 +223,81 @@
             </div>
 
             <!-- /top navigation -->
+            <!-- page content -->
+            @yield('content')
+            
+
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                   By Thu Hiền - Tấn Long
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+<!-- jQuery -->
+<script src="admin_asset/layout/vendors/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="admin_asset/layout/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!-- FastClick -->
+<script src="admin_asset/layout/vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script src="admin_asset/layout/vendors/nprogress/nprogress.js"></script>
+<!-- Chart.js -->
+<script src="admin_asset/layout/vendors/Chart.js/dist/Chart.min.js"></script>
+<!-- gauge.js -->
+<script src="admin_asset/layout/vendors/gauge.js/dist/gauge.min.js"></script>
+<!-- bootstrap-progressbar -->
+<script src="admin_asset/layout/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+<!-- iCheck -->
+<script src="admin_asset/layout/vendors/iCheck/icheck.min.js"></script>
+<!-- Skycons -->
+<script src="admin_asset/layout/vendors/skycons/skycons.js"></script>
+<!-- Flot -->
+<script src="admin_asset/layout/vendors/Flot/jquery.flot.js"></script>
+<script src="admin_asset/layout/vendors/Flot/jquery.flot.pie.js"></script>
+<script src="admin_asset/layout/vendors/Flot/jquery.flot.time.js"></script>
+<script src="admin_asset/layout/vendors/Flot/jquery.flot.stack.js"></script>
+<script src="admin_asset/layout/vendors/Flot/jquery.flot.resize.js"></script>
+<!-- Flot plugins -->
+<script src="admin_asset/layout/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+<script src="admin_asset/layout/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+<script src="admin_asset/layout/vendors/flot.curvedlines/curvedLines.js"></script>
+<!-- DateJS -->
+<script src="admin_asset/layout/vendors/DateJS/build/date.js"></script>
+<!-- JQVMap -->
+<script src="admin_asset/layout/vendors/jqvmap/dist/jquery.vmap.js"></script>
+<script src="admin_asset/layout/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+<script src="admin_asset/layout/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+<!-- bootstrap-daterangepicker -->
+<script src="admin_asset/layout/vendors/moment/min/moment.min.js"></script>
+<script src="admin_asset/layout/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+<!-- Custom Theme Scripts -->
+<script src="admin_asset/layout/build/js/custom.min.js"></script>
+<!-- Datatables -->
+<script src="admin_asset/layout/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="admin_asset/layout/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="admin_asset/layout/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="admin_asset/layout/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+<script src="admin_asset/layout/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+<script src="admin_asset/layout/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="admin_asset/layout/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="admin_asset/layout/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+<script src="admin_asset/layout/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+<script src="admin_asset/layout/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="admin_asset/layout/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+<script src="admin_asset/layout/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+<script src="admin_asset/layout/vendors/jszip/dist/jszip.min.js"></script>
+<script src="admin_asset/layout/vendors/pdfmake/build/pdfmake.min.js"></script>
+<script src="admin_asset/layout/vendors/pdfmake/build/vfs_fonts.js"></script>
+<!-- Dropzone.js -->
+<script src="admin_asset/layout/vendors/dropzone/dist/min/dropzone.min.js"></script>
+<!--  -->
+
+</body>
+
+</html>            

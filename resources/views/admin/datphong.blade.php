@@ -1,4 +1,5 @@
-<?php include_once __DIR__."/header.php" ?>
+@extends('admin.layouts.master')
+@section('content')
 
 <!-- page content -->
 <div class="row">
@@ -7,7 +8,7 @@
             <!-- <div class=""> -->
             <div class="page-title">
                 <div class="title_left">
-                    <h3>Tour <small>Trang quản lí các tour du lịch</small></h3>
+                    <h3>Tour <small>Trang quản lí đặt phòng</small></h3>
                 </div>
                 <div class="title_right">
                     <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
@@ -27,7 +28,7 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="x_panel">
                         <div class="x_title">
-                            <h2>Bảng điều khiển <small>Tours</small></h2>
+                            <h2>Bảng điều khiển <small>Danh sách đặt phòng</small></h2>
                             <ul class="nav navbar-right panel_toolbox">
                                 <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                 </li>
@@ -38,16 +39,22 @@
                             <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th>ID Tour</th>
-                                        <th>Tên tour</th>
-                                        <th style="width:70px">Điểm khởi hành</th>
-                                        <th style="width:70px">Thời gian khởi hành</th>
-                                        <th style="width:70px">Xem chi tiết</th>
-                                        <th style="width:17px"> Xóa</th>
+                                        <th>ID </th>
+                                        <th>Tên Khách</th>
+                                        <th style="width:70px">Email</th>
+                                        <th style="width:40px">Số Điện Thoại</th>
+                                        <th style="width:70px">Địa Chỉ</th>
+                                        <th style="width:40px">Thời Gian Đến</th>
+                                        <th style="width:40px">Thời Gian Đi</th>
+                                        <th style="width:40px">Người Lớn</th>
+                                        <th style="width:40px">Trẻ Em</th>
+                                        <th style="width:40px">Chú Thích</th>
+                                        <th style="width:40px">Loại Phòng</th>
+                                        <th style="width:17px"> Tình Trạng</th>
                                     </tr>
                                 </thead>
                                 <tbody> 
-                                <?php
+                                <!--
                                     include "../../../admin/function/tour/tour.php";
                                     $tour=new TXSTour();
                                     foreach($tour->HienThi() as $key => $value){
@@ -65,7 +72,7 @@
                                                 '<td> <button style="outline:0;border:0;width:34px;background:none" type="submit" name="xoa"><img src="../../../assets/icon/delete.png" style="width:100%"></button> </td>'.  
                                         '</tr>';
                                      }
-                                    ?>
+                                   -->
                                 </tbody>
                             </table>
                           
@@ -79,4 +86,4 @@
     </div>
 </div>
 <!-- /page content -->
-<?php include_once __DIR__."/footer.php" ?>
+@stop

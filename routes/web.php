@@ -17,6 +17,10 @@ Route::get('admin',function(){
     return view('admin.index');
     
 });
+Route::get('datphong',function(){
+    return view('admin.datphong');
+    
+});
 Route::get('about',function(){
     return view('about');
     

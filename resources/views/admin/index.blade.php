@@ -1,4 +1,5 @@
-<?php include_once __DIR__."/layout/header.php" ?>
+@extends('admin.layouts.master')
+@section('content')
 <!-- page content -->
 <div class="row">
     <div class="col-sm-12">
@@ -42,4 +43,5 @@
     </div>
 </div>
 <!-- /page content -->
-<?php include_once __DIR__."/layout/footer.php" ?>
+
+@stop
