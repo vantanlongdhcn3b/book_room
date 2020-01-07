@@ -49,3 +49,6 @@
 - Website có cơ sở dữ liệu, kết nối csdl với website.
 ## Hướng phát triên:
 - Hoàn thành các chức năng thêm, xóa, sửa, tìm kiếm và nhiều chức năng sẽ upload theo yêu cầu đã đặt ra.
+- Thêm trang chi tiết phòng.
+- Chức năng sự kiện.
+- Chức năng Bình luận: Tích hợp cho phép người truy cập bình luận đánh giá vào các tour du lịch.
