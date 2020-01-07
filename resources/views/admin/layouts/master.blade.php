@@ -76,15 +76,14 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a><i class="glyphicon glyphicon-certificate" style="margin-right: 12px;"></i> Hướng
-                                        dẫn viên <span class="fa fa-chevron-down"></span></a>
+                                    <a><i class="glyphicon glyphicon-certificate" style="margin-right: 12px;"></i> Danh Sách Phòng <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="admin/tour">Xem tất cả</a></li>
                                         <li><a href="MainLayout/guider/add_tour_guider.php">Thêm mới</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a><i class="glyphicon glyphicon-leaf" style="margin-right: 12px;"></i> Tour <span
+                                    <a><i class="glyphicon glyphicon-leaf" style="margin-right: 12px;"></i> Đặt phòng <span
                                             class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="admin/tour">Xem tất cả</a></li>
@@ -100,12 +99,12 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a><i class="glyphicon glyphicon-record" style="margin-right: 12px;"></i> Booking
+                                    <a><i class="glyphicon glyphicon-record" style="margin-right: 12px;"></i> Sự Kiện
                                     </a>
                                 </li>
                                
                                 <li>
-                                    <a><i class="glyphicon glyphicon-user" style="margin-right: 12px;"></i> Customer
+                                    <a><i class="glyphicon glyphicon-user" style="margin-right: 12px;"></i> Khách Hàng
                                     </a>
                                 </li>
                             
