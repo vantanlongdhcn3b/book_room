@@ -17,7 +17,9 @@ Route::get('admin',function(){
     return view('admin.index');
     
 });
-Route::get('datphong','DatPhongController@DanhSach');
+Route::get('datphong','DatPhongController@DanhSach')->name('datphong.danhsach');
+
+Route::get('datphong/{id}','DatPhongController@getdelete')->name('datphong.xoa');
 Route::get('about',function(){
     return view('about');
     

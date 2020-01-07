@@ -81,14 +81,19 @@ class DatPhongController extends Controller
         //
     }
 
+    public function getdelete($id)
+    {
+        // $dp=DatPhong::find($id);
+        // $dp->delete();
+        DatPhong::destroy($id);
+        return redirect()->route('datphong.danhsach')->with(['flash_level'=>'success','flass_message'=>'Xóa Thành Công']);
+
+    }
     /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
-    }
+    
 }
