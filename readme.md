@@ -27,23 +27,23 @@
 - Ngoài ra website cung cấp cho người quản trị có thể thêm các danh mục cần thiết.
 - Website sẽ thực hiện trên ngôn ngữ PHP, MySQL
 ## Yêu Cầu :
--PHP >= 7.2.0
--BCMath PHP Extension
--Ctype PHP Extension
--JSON PHP Extension
--Mbstring PHP Extension
--OpenSSL PHP Extension
--PDO PHP Extension
--Tokenizer PHP Extension
--XML PHP Extension
+- PHP >= 7.2.0
+- BCMath PHP Extension
+- Ctype PHP Extension
+- JSON PHP Extension
+- Mbstring PHP Extension
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Tokenizer PHP Extension
+- XML PHP Extension
 ## Các bước cài đặt:
-Bước 1 : Cài đặt Xampp theo hướng dẫn ở link "https://hocwebchuan.com/tutorial/php/install_xampp.php"
-Bước 2 : Cài Đặt Composer tại https://getcomposer.org/
-Bước 3 : Clone về máy.
-Bước 4 : Mở Command tại thư mục chứa source gõ lệnh :
+- Bước 1 : Cài đặt Xampp theo hướng dẫn ở link "https://hocwebchuan.com/tutorial/php/install_xampp.php"
+- Bước 2 : Cài Đặt Composer tại https://getcomposer.org/
+- Bước 3 : Clone về máy.
+- Bước 4 : Mở Command tại thư mục chứa source gõ lệnh :
         - php artisan server
         - php artisan migrate
-Bước 5 : Vào trình duyệt gõ đường dẫn 127.0.0.1:8000
+- Bước 5 : Vào trình duyệt gõ đường dẫn 127.0.0.1:8000
 ## Nội dung bài toán:
 - Hiện tại website đã hoàn thành 50% giao diện .
 - Website có cơ sở dữ liệu, kết nối csdl với website.
