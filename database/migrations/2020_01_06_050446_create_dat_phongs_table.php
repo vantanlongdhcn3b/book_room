@@ -20,8 +20,8 @@ class CreateDatPhongsTable extends Migration
             $table->integer('SDT');
             $table->string('DiaChi',500);
            
-            $table->date('TGDen');
-            $table->date('TGdi');
+            $table->string('TGDen');
+            $table->string('TGdi');
             $table->integer('NguoiLon');
             $table->integer('TreEm');
             $table->longText('ChuThich'); 

@@ -18,6 +18,13 @@ class DatPhongController extends Controller
         return view('reservation',compact('lp'));
     }
 
+    public function DanhSach()
+    {
+        $lp=LoaiPhong::all();
+        $danhsach=DatPhong::all();
+        return view('admin.datphong',compact('lp','danhsach'));
+    }
+    
     /**
      * Show the form for creating a new resource.
      *

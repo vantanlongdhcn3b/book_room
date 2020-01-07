@@ -51,28 +51,35 @@
                                         <th style="width:40px">Chú Thích</th>
                                         <th style="width:40px">Loại Phòng</th>
                                         <th style="width:17px"> Tình Trạng</th>
+                                        <th style="width:17px">     </th>
+
                                     </tr>
                                 </thead>
                                 <tbody> 
-                                <!--
-                                    include "../../../admin/function/tour/tour.php";
-                                    $tour=new TXSTour();
-                                    foreach($tour->HienThi() as $key => $value){
-                                        echo 
-                                        '<tr >
-                                            <td>'.$value->id_tour.'</td>'.
-                                            '<td>'.$value->name_tour.'</td>'.
-                                            '<td>'.$value->place_start.'</td>'.
-                                            '<td>'.$value->date_go.'</td>'.
-                                            '<td>'.
-                                                '<a href="detail_tour.php?id='.
-                                                $value->id_tour.'"'.
-                                                    '>Xem chi tiết'.
-                                                '</a></td>'.
-                                                '<td> <button style="outline:0;border:0;width:34px;background:none" type="submit" name="xoa"><img src="../../../assets/icon/delete.png" style="width:100%"></button> </td>'.  
-                                        '</tr>';
-                                     }
-                                   -->
+                                
+                                    @foreach($danhsach as $item)                                       
+                                        <tr >
+                                            <td>{!!$item->DatPhong_ID!!}</td>
+                                            <td>{!!$item->TenKhach!!}</td>
+                                            <td>{!!$item->Email!!}</td>
+                                            <td>{!!$item->SDT!!}</td>
+                                            <td>{!!$item->DiaChi!!}</td>
+                                            <td>{!!$item->TGDen!!}</td>
+                                            <td>{!!$item->TGdi!!}</td>
+                                            <td>{!!$item->NguoiLon!!}</td>
+                                            <td>{!!$item->TreEm!!}</td>
+                                            <td>{!!$item->ChuThich!!}</td>
+                                            @foreach($lp as $i)
+                                                @if($i->LoaiPhong_ID===$item->LoaiPhong_ID)
+                                                <td>{!!$i->Ten!!}</td>
+                                                @endif
+                                            @endforeach
+                                            
+                                            <td>{!!$item->TenKhach!!}</td>
+                                            <td> <button style="outline:0;border:0;width:34px;background:none" type="submit" name="xoa">Xóa</button> </td>
+                                        </tr>
+                                    @endforeach
+                                   
                                 </tbody>
                             </table>
                           
