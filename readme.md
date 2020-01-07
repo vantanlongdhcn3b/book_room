@@ -26,12 +26,24 @@
     2. Theo danh mục combo : Ngày cuối tuần, dịp hè, lễ tết.
 - Ngoài ra website cung cấp cho người quản trị có thể thêm các danh mục cần thiết.
 - Website sẽ thực hiện trên ngôn ngữ PHP, MySQL
+## Yêu Cầu :
+-PHP >= 7.2.0
+-BCMath PHP Extension
+-Ctype PHP Extension
+-JSON PHP Extension
+-Mbstring PHP Extension
+-OpenSSL PHP Extension
+-PDO PHP Extension
+-Tokenizer PHP Extension
+-XML PHP Extension
 ## Các bước cài đặt:
-Bước1: Cài đặt Xampp theo hướng dẫn ở link "https://hocwebchuan.com/tutorial/php/install_xampp.php"
-
-Bước2: Clone về máy theo cách sau trong thư mục C/xampp/htdocs: Tải git về máy, chuột phải vào thư mục cần lưu trữ, chọn git pash here, gõ lệnh "git clone https://github.com/nguyenngochientt/WebDuLich-BaiTapLon-PTMNM-.git".
-
-Bước3: Vào trình duyệt gõ đường dẫn vào localhost đến thư mục đã cài đặt.
+Bước 1 : Cài đặt Xampp theo hướng dẫn ở link "https://hocwebchuan.com/tutorial/php/install_xampp.php"
+Bước 2 : Cài Đặt Composer tại https://getcomposer.org/
+Bước 3 : Clone về máy.
+Bước 4 : Mở Command tại thư mục chứa source gõ lệnh :
+        - php artisan server
+        - php artisan migrate
+Bước 5 : Vào trình duyệt gõ đường dẫn 127.0.0.1:8000
 ## Nội dung bài toán:
 - Hiện tại website đã hoàn thành 50% giao diện .
 - Website có cơ sở dữ liệu, kết nối csdl với website.
