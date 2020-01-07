@@ -41,8 +41,8 @@
 - Bước 2 : Cài Đặt Composer tại https://getcomposer.org/
 - Bước 3 : Clone về máy.
 - Bước 4 : Mở Command tại thư mục chứa source gõ lệnh :
-        - php artisan server
-        - php artisan migrate
+        1. php artisan server
+        2. php artisan migrate
 - Bước 5 : Vào trình duyệt gõ đường dẫn 127.0.0.1:8000
 ## Nội dung bài toán:
 - Hiện tại website đã hoàn thành 50% giao diện .
