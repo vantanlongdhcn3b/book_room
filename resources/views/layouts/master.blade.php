@@ -64,7 +64,7 @@
     </header>
     <!-- END head -->
 
-    @yield('container');
+    @yield('container')
     
     @yield('content');
 

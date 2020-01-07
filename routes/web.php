@@ -12,7 +12,6 @@
 */
 
 Route::get('/','HomeController@index');
-
 Route::get('admin',function(){
     return view('admin.index');
     
@@ -24,6 +23,8 @@ Route::get('about',function(){
     return view('about');
     
 });
+Route::post('search','TimKiemController@TimKiem')->name('timkiem');
+
 
 Route::get('contact',function(){
     return view('contact');

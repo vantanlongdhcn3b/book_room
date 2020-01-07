@@ -15,12 +15,12 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
 
-            KhachSanTableSeeder::class,
-            AnhKSTableSeeder::class,
-            LoaiPhongTableSeeder::class,
-            PhongTableSeeder::class,
-            MonAnTableSeeder::class,
-
+            // KhachSanTableSeeder::class,
+            // AnhKSTableSeeder::class,
+            // LoaiPhongTableSeeder::class,
+            // PhongTableSeeder::class,
+            // MonAnTableSeeder::class,
+            AnhPhongTableSeeder::class,
         ]);
        
        
